@@ -9,6 +9,7 @@
 #include <sstream>
 #include <stdlib.h>
 #include "TGraph.h"
+#include "TAxis.h"
 
 struct entries
 {
@@ -35,5 +36,6 @@ private:
   bool readFile();
   std::string fFileName;
   std::vector< entries > fEntries;
+  std::vector< TGraph> fGraphs;
 };
 #endif //METEOPLOTS_H
